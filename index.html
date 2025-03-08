@@ -175,27 +175,28 @@
             <!-- Frontend Technologies -->
             <h2 class="text-2xl font-bold text-yellow-500 mb-4">Frontend Technologies</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                <img class="w-16 h-16" src="asset/html.svg" alt="HTML">
-                <img class="w-16 h-16" src="asset/css-icon.svg" alt="CSS">
-                <img class="w-16 h-16" src="asset/js.png" alt="CSS">
-                <img class="w-16 h-16" src="asset/react.png" alt="React">
-                <img class="w-16 h-16" src="asset/tailwind.png" alt="Tailwind CSS">
+                <img class="w-16 h-16 object-contain" src="asset/html.svg" alt="HTML">
+                <img class="w-16 h-16 object-contain" src="asset/css-icon.svg" alt="CSS">
+                <img class="w-16 h-16 object-contain" src="asset/js.png" alt="CSS">
+                <img class="w-16 h-16 object-contain" src="asset/react.png" alt="React">
+                <img class="w-16 h-16 object-contain" src="asset/tailwind.png" alt="Tailwind CSS">
 
             </div>
 
             <!-- Backend Technologies -->
             <h2 class="text-2xl font-bold text-yellow-500 mt-8 mb-4">Backend Technologies</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                <img class="w-16 h-16" src="asset/nodejs.png" alt="Node.js">
-                <img class="w-16 h-16" src="asset/express.png" alt="Express">
-                <img class="w-16 h-16" src="asset/firebase.png" alt="Express">
+                <img class="w-16 h-16 object-contain" src="asset/nodejs.png" alt="Node.js">
+                <img class="w-16 h-16 object-contain" src="asset/express.png" alt="Express">
+                <img class="w-16 h-16 object-contain" src="asset/firebase.png" alt="Express">
+                <img class="w-16 h-16 object-contain" src="asset/mongodb.png" alt="Mongo">
             </div>
 
             <h2 class="text-2xl font-bold text-yellow-500 mt-8 mb-4">Languages</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                <img class="w-16 h-16" src="asset/cpp.svg" alt="C++">
-                <img class="w-16 h-16" src="asset/c.svg" alt="C">
-                <img class="w-16 h-16" src="asset/python.svg" alt="Python">
+                <img class="w-16 h-16 object-contain" src="asset/cpp.svg" alt="C++">
+                <img class="w-16 h-16 object-contain" src="asset/c.svg" alt="C">
+                <img class="w-16 h-16 object-contain" src="asset/python.svg" alt="Python">
             </div>
         </div>
         <!-- <div class="graphics">
@@ -241,35 +242,52 @@
     </div>
 
     </div>
-    <div id="Contact" class="contact-form">
-        <div class="form">
-            <h1 class="heading">Contact Form</h1>
-            <input placeholder="Name" type="text">
-            <input placeholder="Email id" type="text">
-            <input placeholder="Phone Number" type="text">
-            <input placeholder="Message" class="message" type="message">
-            <button class="contact-button">Sumbit</button>
+    <div id="Contact" class="min-h-[100vh] bg-[#00061f] flex flex-col items-center justify-center">
+        <div class="w-[90vw] md:w-[60vw] max-w-2xl mx-auto bg-gray-900 p-6 rounded-2xl shadow-lg">
+            <h1 class="text-2xl font-bold text-center mb-4 text-white">Contact Form</h1>
+            <form class="space-y-4">
+                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Name" type="text">
+                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Email ID" type="email">
+                <textarea class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white bg-[#0F0F0F]" placeholder="Message"></textarea>
+                <button class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition cursor-pointer">Submit</button>
+            </form>
         </div>
+        
+        
     </div>
-    <footer>
-
-        <div class="foot">
-            <div class="socials">
-                <h3 class="social">Social Media</h3>
-                <ul>
-                    <li class="instagram"><a href="#" class="fa fa-instagram"></a></li>
-                    <li class="linkedin"><a href="#" class="fa fa-linkedin"></a></li>
-                    <li class="github"><a href="#" class="fa fa-github"></a></li>
-                    <li class="thread"><a href="#" class="fa fa-twitter"></a></li>
-
+    <footer class="bg-gray-900 text-white py-6">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
+            <div class="mb-4 md:mb-0">
+                <h3 class="text-lg font-semibold">Follow Us</h3>
+                <ul class="flex space-x-4 mt-2">
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fa fa-instagram text-xl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fa fa-linkedin text-xl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fa fa-github text-xl"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fa fa-twitter text-xl"></i>
+                        </a>
+                    </li>
                 </ul>
             </div>
-            <div class="copyright">
-                <p> ©2024 All Rights Reserved</p>
+            <div class="text-gray-400 text-sm">
+                <p>© 2024 All Rights Reserved</p>
             </div>
         </div>
-
     </footer>
+    
     <script>
         function showsidebar() {
             const sidebar = document.querySelector('.side-bar')

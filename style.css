@@ -63,6 +63,7 @@ nav h4 {
     font-weight: 400;
 }
 
+
 .contact-button {
     border-radius: 28px;
     background-color: #e29b2bed;
@@ -78,7 +79,7 @@ nav h4 {
 
 .graphic-portfolio {
     border-radius: 28px;
-    background-color: #00ffdded;
+    background-color: #fffb00ed;
     padding: 8px 42px;
     position: relative;
 
@@ -454,26 +455,14 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
-
-
 }
 
-.message {
-    height: 34px;
-    border-bottom: 2px solid rgb(1, 230, 255);
-
-}
 
 input {
 
     text-decoration: none;
     background-color: #0f0f0f;
     border: 0px;
-    border-bottom: 2px solid rgb(1, 230, 255);
-
-    font-size: 2rem;
-    margin: 45px;
     color: white;
     font-family: "Baloo 2", sans-serif;
 }
@@ -509,7 +498,6 @@ footer {
 .foot {
     display: flex;
     flex-direction: column;
-    margin-inline: 10vw;
     align-items: center;
 
 }
@@ -671,10 +659,7 @@ footer {
         padding: 23px 0px;
     }
 
-    .projects {
-        padding: 0;
-    }
-
+    
     .cards4 {
         align-items: center;
     }
@@ -707,90 +692,3 @@ footer {
 
 }
 
-
-
-
-
-
-
-
-@keyframes float {
-    0% {
-        transform: translateY(0px);
-    }
-
-    50% {
-        transform: translateY(-20px);
-    }
-
-    100% {
-        transform: translateY(0px);
-    }
-}
-
-@keyframes blink {
-    0% {
-        opacity: 0;
-    }
-
-    50% {
-        opacity: .5;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-
-
-
-@keyframes html {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 45vw;
-    }
-}
-
-@keyframes css {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 40vw;
-    }
-}
-
-@keyframes c {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 45vw;
-    }
-}
-
-@keyframes cpp {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 35vw;
-    }
-}
-
-@keyframes python {
-    0% {
-        width: 0%;
-    }
-
-    100% {
-        width: 30vw;
-    }
-}
