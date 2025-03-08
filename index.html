@@ -9,6 +9,7 @@
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <script src="https://kit.fontawesome.com/bdfed66c45.js" crossorigin="anonymous"></script>
 </head>
 
@@ -44,11 +45,11 @@
 
                 <div class="menu">
                     <ul style="display: flex; flex-direction: column;">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Careers</a></li>
+                        <li><a href="#Home">Home</a></li>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Education">Education</a></li>
+                        <li><a href="#Skills">Skills</a></li>
+                        <li><a href="#Contact">Contact</a></li>
                         <button class="contact-button"><a href="#Contact">Contact</a></button>
 
                     </ul>
@@ -70,21 +71,22 @@
             <p> Crafting Scalable, User-Centric, and High-Performance Web Solutions with Clean Code and Modern
                 Technologies."</p>
             <ul class="social-links">
-                <li><a href="https://github.com/your-profile" target="_blank"><i class="fab fa-github"></i> </a></li>
-                <li><a href="https://linkedin.com/in/your-profile" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <li><a href="https://github.com/Pankajinos" target="_blank"><i class="fab fa-github"></i> </a></li>
+                <li><a href="https://linkedin.com/in/pankajinos" target="_blank"><i class="fab fa-linkedin"></i></a>
                 </li>
                 <li>
-                    <a href="https://codeforces.com/profile/your-profile" target="_blank">
+                    <a href="https://codeforces.com/profile/pankajinos" target="_blank">
                         <img src="asset/codeforces.svg" alt="Codeforces" width="24" height="24">
                     </a>
                 </li>
-                <li><a href="https://instagram.com/your-profile" target="_blank"><i class="fab fa-instagram"></i></a>
+                <li><a href="https://instagram.com/___pankaj__soni__" target="_blank"><i
+                            class="fab fa-instagram"></i></a>
                 </li>
             </ul>
 
         </div>
         <div class="right-1">
-            <img src="asset/heroImage.svg" alt="">
+            <img id="animated-image" class="w-[90vw] md:w-[50vw]" src="asset/heroImage.svg" alt="">
         </div>
     </div>
 
@@ -105,16 +107,7 @@
                     solving complex coding challenges.
 
                     I specialize in full-stack development using ReactJS, Node.js, Express.js, and MongoDB, and I'm
-                    proficient in languages like C++, C, and Python. My projects range from an AI-powered trip
-                    planner
-                    to a
-                    contact management API, showcasing my expertise in both frontend and backend development.
-
-                    Beyond coding, I'm an active Pupil on Codeforces (Max Rating: 1239) and 2-star coder on CodeChef
-                    (Max
-                    Rating: 1490). I also contribute as a Web Developer for the Quizzers’ Club at MANIT Bhopal,
-                    where I
-                    helped create a quiz-hosting platform for 1,000+ students.
+                    proficient in languages like C++, C, and Python.
                 </p>
             </div>
         </div>
@@ -172,18 +165,15 @@
     <div id="Skills" class="skills h-100vh">
         <h1 class="heading mt-0 p-0">Skills</h1>
         <div class="p-8">
-            <!-- Frontend Technologies -->
             <h2 class="text-2xl font-bold text-yellow-500 mb-4">Frontend Technologies</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
-                <img class="w-16 h-16 object-contain" src="asset/html.svg" alt="HTML">
-                <img class="w-16 h-16 object-contain" src="asset/css-icon.svg" alt="CSS">
+                <img class="w-16 h-16 object-contain" src="asset/html.png" alt="HTML">
+                <img class="w-16 h-16 object-contain" src="asset/css.png" alt="CSS">
                 <img class="w-16 h-16 object-contain" src="asset/js.png" alt="CSS">
                 <img class="w-16 h-16 object-contain" src="asset/react.png" alt="React">
                 <img class="w-16 h-16 object-contain" src="asset/tailwind.png" alt="Tailwind CSS">
 
             </div>
-
-            <!-- Backend Technologies -->
             <h2 class="text-2xl font-bold text-yellow-500 mt-8 mb-4">Backend Technologies</h2>
             <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
                 <img class="w-16 h-16 object-contain" src="asset/nodejs.png" alt="Node.js">
@@ -199,66 +189,75 @@
                 <img class="w-16 h-16 object-contain" src="asset/python.svg" alt="Python">
             </div>
         </div>
-        <!-- <div class="graphics">
-            <h2 style="color: aliceblue; font-family:Ubuntu ;font-size: 3em;">Graphic Desigining</h2>
-            <div class="graphic">
-                <br></br>
-                <p>Tools known</p>
-                <div class="tools">
-                    <img src="asset/adobe-photoshop-icon.svg" alt=""> <img src="asset/canva-icon.svg" alt="">
-                </div>
-
-            </div>
-            <button class="graphic-portfolio"><a target="_blank"
-                    href="https://drive.google.com/drive/folders/1DQkInxM8sWjuZ8QlDQTAxBrUU1M3cqxt?usp=sharing">Portfolio</a></button>
-        </div> -->
     </div>
     <div id="Projects" class="flex flex-col items-center justify-center bg-[#020917]">
         <h1 class="heading">Projects</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-10 pb-14">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-10 p-14">
             <!-- AI Trip Planner -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform ">
+            <div
+                class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform ">
                 <img src="asset/AiTripPlanner.png" alt="AI Trip Planner" class="w-full object-cover">
-                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">AI Trip Planner</h3>
+                <h3 class="text-white text-lg lg:text-2xl font-semibold mt-4">AI Trip Planner</h3>
                 <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">AI-generated trips based on your preference</p>
                 <div class="flex gap-3 mt-4">
-                    <a href="https://ai-trip-planner-ruby.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
-                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                    <a href="https://ai-trip-planner-ruby.vercel.app/" target="_blank"
+                        class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live
+                        Demo</a>
+                    <a href="https://github.com/Pankajinos/AITripPlanner" target="_blank"
+                        class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub
+                        Repo</a>
                 </div>
             </div>
-        
+
             <!-- Task Manager -->
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform ">
+            <div
+                class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform ">
                 <img src="asset/taskManager.png" alt="Task Manager" class="w-full object-cover">
-                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">Task Manager</h3>
+                <h3 class="text-white text-2xl lg:text-2xl font-semibold mt-4">Task Manager</h3>
                 <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Full stack app using the MERN stack</p>
                 <div class="flex gap-3 mt-4">
-                    <a href="https://task-manager-ten-flax.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
-                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                    <a href="https://task-manager-ten-flax.vercel.app/" target="_blank"
+                        class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live
+                        Demo</a>
+                    <a href="https://github.com/Pankajinos/TaskManager" target="_blank"
+                        class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub
+                        Repo</a>
                 </div>
             </div>
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform">
+            <div
+                class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform">
                 <img src="asset/digitalClock.png" alt="Task Manager" class="w-full object-cover">
-                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">Digital Clock</h3>
-                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Created a functioning digital clock with inovative design</p>
+                <h3 class="text-white text-2xl lg:text-2xl font-semibold mt-4">Digital Clock</h3>
+                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Created a functioning digital clock with inovative
+                    design</p>
                 <div class="flex gap-3 mt-4">
-                    <a href="https://digital-clock-zeta-ten.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
-                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                    <a href="https://digital-clock-zeta-ten.vercel.app/" target="_blank"
+                        class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live
+                        Demo</a>
+                    <a href="https://github.com/Pankajinos/Digital_Clock" target="_blank"
+                        class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub
+                        Repo</a>
                 </div>
             </div>
-            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform">
+            <div
+                class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform">
                 <img src="asset/easybank.png" alt="Task Manager" class="w-full object-cover">
-                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">Digital Clock</h3>
-                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Fully responisve webisite with help of HTML, CSS and JS</p>
+                <h3 class="text-white text-2xl lg:text-2xl font-semibold mt-4">Easy Bank</h3>
+                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Fully responisve webisite with help of HTML, CSS
+                    and JS</p>
                 <div class="flex gap-3 mt-4">
-                    <a href="https://easy-bank-sable.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
-                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                    <a href="https://easy-bank-sable.vercel.app/" target="_blank"
+                        class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live
+                        Demo</a>
+                    <a href="https://github.com/Pankajinos/easy_bank" target="_blank"
+                        class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub
+                        Repo</a>
                 </div>
             </div>
-        
+
         </div>
-        
-        
+
+
     </div>
 
     <div id="Contact" class="min-h-[100vh] bg-[#00061f] flex flex-col items-center justify-center">
@@ -313,6 +312,19 @@
     </footer>
 
     <script>
+        const img = document.getElementById("animated-image");
+        const lottieContainer = document.createElement("div");
+        lottieContainer.id = "hero_img";
+        lottieContainer.style.zIndex = 0;
+        img.replaceWith(lottieContainer);
+
+        lottie.loadAnimation({
+            container: lottieContainer,
+            renderer: "svg",
+            loop: true,
+            autoplay: true,
+            path: "/asset/lottie/computer.json"
+        });
         function showsidebar() {
             const sidebar = document.querySelector('.side-bar')
             const cross = document.querySelector('.cross')

@@ -23,7 +23,8 @@ p {
 
 header {
     position: sticky;
-    top: 0px;
+    top: 0;
+    z-index: 100;
 }
 
 nav {
@@ -39,6 +40,7 @@ nav {
     top: 0px;
     right: 0px;
     flex-wrap: wrap;
+    z-index: 30;
 
 }
 
@@ -96,20 +98,18 @@ a {
 
 .home {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     background: linear-gradient(to bottom, black, #1c0029);
     z-index: -1;
     flex-wrap: wrap;
+    min-width: 100vh;
 }
 
 .home h5 {
-
     font-family: "Baloo 2", sans-serif;
-
-
     font-weight: 300;
-    color: #bba019;
+    color: orange;
 
 }
 
@@ -143,16 +143,20 @@ a {
     width: 30%;
     display: flex;
     flex-direction: column;
+    margin-left: 10vw;
 
 }
 
 @media (max-width:850px) {
     .left-1 {
-        width: 80%;
+        margin-top: 40px;
+        width: 80vh;
+        margin: 5vw;
+
     }
 
-    .right-1 img {
-        height: 50vh;
+    #hero_img {
+        width: 90vw;
     }
 }
 
@@ -402,7 +406,7 @@ a {
 .projects {
     background-color: #020917;
     display: grid;
-    grid-template-columns: 1fr; 
+    grid-template-columns: 1fr;
     gap: 50px;
 }
 
@@ -429,12 +433,15 @@ a {
 .card3 img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures it covers the width properly */
-    border-radius: 12px; /* Optional: Slight rounded corners */
+    object-fit: cover;
+    /* Ensures it covers the width properly */
+    border-radius: 12px;
+    /* Optional: Slight rounded corners */
 }
 
 /* Button Styling */
-.btn-live, .btn-repo {
+.btn-live,
+.btn-repo {
     padding: 10px 16px;
     border-radius: 8px;
     text-decoration: none;
@@ -471,7 +478,8 @@ a {
         width: 90vw;
     }
 
-    .btn-live, .btn-repo {
+    .btn-live,
+    .btn-repo {
         padding: 8px 14px;
         font-size: 12px;
     }
