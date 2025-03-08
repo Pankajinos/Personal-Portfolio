@@ -282,9 +282,10 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: rgb(29, 29, 29);
+    background: #05001e;
     flex-wrap: wrap;
     gap: 90px;
+    min-height: 100vh;
 }
 
 .arrow img {
@@ -300,8 +301,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #00102d;
+    background: rgb(8, 5, 34);
     flex-wrap: wrap;
+    min-height: 100vh;
 }
 
 .bar {
@@ -399,53 +401,80 @@ a {
 
 .projects {
     background-color: #020917;
-    flex-wrap: wrap;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    padding: 80px;
+    display: grid;
+    grid-template-columns: 1fr; 
     gap: 50px;
 }
 
+@media (min-width: 1024px) {
+    .projects {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
 
 .card3 {
-    width: 350px;
-
     background-color: #020917;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     border-radius: 23px;
-    padding: 13px;
     box-shadow: 6px 12px 20px 0px #000000b0;
+    width: 38vw;
+    min-width: 250px;
+    padding: 2px;
+    text-align: center;
 }
-
-@media (min-width:850px) {
-    .card3 {
-        height: 400px;
-    }
-}
-
 
 .card3 img {
     width: 100%;
-    margin-top: 0;
-    border-radius: 12px;
-
+    height: auto;
+    object-fit: cover; /* Ensures it covers the width properly */
+    border-radius: 12px; /* Optional: Slight rounded corners */
 }
 
+/* Button Styling */
+.btn-live, .btn-repo {
+    padding: 10px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease-in-out;
+    font-size: 14px;
+}
 
-.card3 h3 {
+/* Live Demo Button */
+.btn-live {
+    background-color: #ff4747;
     color: white;
-    font-family: "Baloo 2", sans-serif;
-    font-size: 2em;
+    box-shadow: 2px 4px 10px rgba(255, 71, 71, 0.4);
 }
 
-.icons {
-    height: 40px;
+.btn-live:hover {
+    background-color: #ff2e2e;
+}
+
+/* GitHub Repo Button */
+.btn-repo {
+    background-color: #1e3a8a;
+    color: white;
+    box-shadow: 2px 4px 10px rgba(30, 58, 138, 0.4);
+}
+
+.btn-repo:hover {
+    background-color: #1a2e66;
+}
+
+/* Responsive Button Styling */
+@media (max-width: 768px) {
+    .card3 {
+        width: 90vw;
+    }
+
+    .btn-live, .btn-repo {
+        padding: 8px 14px;
+        font-size: 12px;
+    }
 }
 
 
@@ -659,7 +688,7 @@ footer {
         padding: 23px 0px;
     }
 
-    
+
     .cards4 {
         align-items: center;
     }
@@ -691,4 +720,3 @@ footer {
 
 
 }
-

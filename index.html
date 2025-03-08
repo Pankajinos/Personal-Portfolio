@@ -213,52 +213,76 @@
                     href="https://drive.google.com/drive/folders/1DQkInxM8sWjuZ8QlDQTAxBrUU1M3cqxt?usp=sharing">Portfolio</a></button>
         </div> -->
     </div>
-    <div id="Projects" class="projects">
+    <div id="Projects" class="flex flex-col items-center justify-center bg-[#020917]">
         <h1 class="heading">Projects</h1>
-        <a href="https://digital-clock-zeta-ten.vercel.app/" target="_blank">
-            <div class="cards4">
-                <div class="card3">
-                    <img src="asset/Screenshot 2024-05-09 152024.png" alt="">
-                    <h3>Digital Clock</h3>
-                    <p>Created a functioning digital clock with inovative design</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 px-4 md:px-10 pb-14">
+            <!-- AI Trip Planner -->
+            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform ">
+                <img src="asset/AiTripPlanner.png" alt="AI Trip Planner" class="w-full object-cover">
+                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">AI Trip Planner</h3>
+                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">AI-generated trips based on your preference</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://ai-trip-planner-ruby.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
+                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
                 </div>
-        </a>
-        <a href="https://easy-bank-sable.vercel.app/" target="_blank">
-            <div class="card3">
-                <img src="asset/desktop-preview.jpg" alt="">
-                <h3>EasyBank Website</h3>
-                <p>Build a fully responisve webisite with help of HTML and CSS.Comatiple to all devices and also
-                    contains a menu bar</p>
             </div>
-        </a>
-        <a href="https://coco-cola.vercel.app/" target="_blank">
-            <div class="card3">
-                <img src="asset/cococola.png" alt="">
-                <h3>CocoCola Website</h3>
-                <p>Build a fully responisve webisite with help of HTML and CSS.Comatiple to all devices and also
-                    contains a menu bar</p>
+        
+            <!-- Task Manager -->
+            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform ">
+                <img src="asset/taskManager.png" alt="Task Manager" class="w-full object-cover">
+                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">Task Manager</h3>
+                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Full stack app using the MERN stack</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://task-manager-ten-flax.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
+                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                </div>
             </div>
-        </a>
-    </div>
-
-    </div>
-    <div id="Contact" class="min-h-[100vh] bg-[#00061f] flex flex-col items-center justify-center">
-        <div class="w-[90vw] md:w-[60vw] max-w-2xl mx-auto bg-gray-900 p-6 rounded-2xl shadow-lg">
-            <h1 class="text-2xl font-bold text-center mb-4 text-white">Contact Form</h1>
-            <form class="space-y-4">
-                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Name" type="text">
-                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" placeholder="Email ID" type="email">
-                <textarea class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white bg-[#0F0F0F]" placeholder="Message"></textarea>
-                <button class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition cursor-pointer">Submit</button>
-            </form>
+            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform">
+                <img src="asset/digitalClock.png" alt="Task Manager" class="w-full object-cover">
+                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">Digital Clock</h3>
+                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Created a functioning digital clock with inovative design</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://digital-clock-zeta-ten.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
+                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                </div>
+            </div>
+            <div class="bg-gray-900 rounded-xl shadow-lg overflow-hidden pb-8 md:pb-4 w-[90vw] md:w-[40vw] max-w-[600px] mx-auto flex flex-col items-center text-center transition-transform">
+                <img src="asset/easybank.png" alt="Task Manager" class="w-full object-cover">
+                <h3 class="text-white text-2xl lg:text-sm font-semibold mt-4">Digital Clock</h3>
+                <p class="text-gray-400 mt-2 text-sm lg:text-xs px-4">Fully responisve webisite with help of HTML, CSS and JS</p>
+                <div class="flex gap-3 mt-4">
+                    <a href="https://easy-bank-sable.vercel.app/" target="_blank" class="bg-red-500 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-red-600 transition">Live Demo</a>
+                    <a href="#" target="_blank" class="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm lg:text-xs font-semibold shadow-md hover:bg-blue-700 transition">GitHub Repo</a>
+                </div>
+            </div>
+        
         </div>
         
         
     </div>
+
+    <div id="Contact" class="min-h-[100vh] bg-[#00061f] flex flex-col items-center justify-center">
+        <div class="w-[90vw] md:w-[60vw] max-w-2xl mx-auto bg-gray-900 p-6 rounded-2xl shadow-lg">
+            <h1 class="text-2xl font-bold text-center mb-4 text-white">Contact Form</h1>
+            <form class="space-y-4">
+                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Name" type="text">
+                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Email ID" type="email">
+                <textarea
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white bg-[#0F0F0F]"
+                    placeholder="Message"></textarea>
+                <button
+                    class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition cursor-pointer">Submit</button>
+            </form>
+        </div>
+
+
+    </div>
     <footer class="bg-gray-900 text-white py-6">
         <div class="container mx-auto flex flex-col md:flex-row justify-between items-center px-6">
-            <div class="mb-4 md:mb-0">
-                <h3 class="text-lg font-semibold">Follow Us</h3>
+            <div class="mb-4 md:mb-0 flex flex-col items-center">
+                <h3 class="text-xl font-semibold">Follow Us</h3>
                 <ul class="flex space-x-4 mt-2">
                     <li>
                         <a href="#" class="text-gray-400 hover:text-white transition">
@@ -287,7 +311,7 @@
             </div>
         </div>
     </footer>
-    
+
     <script>
         function showsidebar() {
             const sidebar = document.querySelector('.side-bar')
