@@ -9,10 +9,6 @@ html {
 }
 
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
 p {
     font-family: "Baloo 2", sans-serif;
@@ -23,9 +19,7 @@ p {
 #About,
 #Education,
 #Skills,
-#Projects {
-    padding-top: 110px;
-}
+#Projects {}
 
 header {
     position: sticky;
@@ -288,7 +282,6 @@ a {
     justify-content: center;
     align-items: center;
     background-color: rgb(29, 29, 29);
-    padding: 90px 0px;
     flex-wrap: wrap;
     gap: 90px;
 }
@@ -454,14 +447,7 @@ a {
     height: 40px;
 }
 
-.contact-form {
-    display: flex;
-    background-color: #0f0f0f;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 10vmin;
-}
+
 
 .form {
     display: flex;
@@ -721,16 +707,7 @@ footer {
 
 }
 
-@media (max-width:1130px) {
-    .left-3 {
-        display: none;
-    }
 
-    .contact-form {
-        display: none;
-    }
-
-}
 
 
 
@@ -817,4 +794,3 @@ footer {
         width: 30vw;
     }
 }
-
