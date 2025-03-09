@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
     <script src="https://kit.fontawesome.com/bdfed66c45.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
 </head>
 
 <body>
@@ -263,15 +265,17 @@
     <div id="Contact" class="min-h-[100vh] bg-[#00061f] flex flex-col items-center justify-center">
         <div class="w-[90vw] md:w-[60vw] max-w-2xl mx-auto bg-gray-900 p-6 rounded-2xl shadow-lg">
             <h1 class="text-2xl font-bold text-center mb-4 text-white">Contact Form</h1>
-            <form class="space-y-4">
-                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Name" type="text">
-                <input class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                    placeholder="Email ID" type="email">
-                <textarea
-                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white bg-[#0F0F0F]"
-                    placeholder="Message"></textarea>
-                <button
+            <form id="contact-form" class="space-y-4">
+                <input name="user_name"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Name" type="text" required>
+                <input name="user_email"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                    placeholder="Email ID" type="email" required>
+                <textarea name="message"
+                    class="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400 placeholder-white text-white bg-[#0F0F0F]"
+                    placeholder="Message" required></textarea>
+                <button type="submit"
                     class="w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 transition cursor-pointer">Submit</button>
             </form>
         </div>
@@ -341,6 +345,23 @@
             sidebar.style.display = 'none'
             open.style.display = 'flex'
         }
+
+        (function () {
+            emailjs.init("ajlQMh5vu86nRaqDD");
+
+            document.getElementById("contact-form").addEventListener("submit", function (event) {
+                event.preventDefault();
+                emailjs.sendForm("service_etnzkhp", "template_5lrki0p", this)
+                    .then(() => {
+                        alert("Message sent successfully!");
+                        this.reset();
+                    })
+                    .catch((error) => {
+                        alert("Failed to send message.");
+                        console.error("EmailJS Error:", error);
+                    });
+            });
+        })();
 
     </script>
 </body>
